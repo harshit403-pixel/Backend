@@ -5,7 +5,7 @@ let cors = require("cors")
 let app = express()
 
 app.use(cors({
-    origin:"http://localhost:5173"
+    origin:"http://localhost:5173"       // front ka url to allow to access the backend CORS ka error ahtane ke liye security 
 }))
 app.use(express.json())
 
